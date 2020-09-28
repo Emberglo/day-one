@@ -1,3 +1,75 @@
-.bg-yellow {
-	background-color: yellow;
+:root {
+	--bg: #f1f1cb;
+	--bg-green: #95cca8;
+	--light: #b3bfcb;
+	--med: #486477;
+	--dark: #2a373b;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--dark);
+	display: flex;
+	flex-direction: column;
+	font-family: 'Lato', sans-serif;
+}
+
+.card {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+.sub-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header-p {
+	max-width: 20vw;
+}
+
+#signature {
+	font-family: 'Rock Salt', cursive;
+	align-self: center;
+	font-weight: 700;
+	color: var(--med);
+}
+
+#author {
+	max-height: 150px;
+	max-width: auto;
+	border-radius: 10px;
+	padding: 0 4em;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	max-width: 99vw;
+}
+
+h3 {
+	margin-block-start: 0.1em;
+	margin-block-end: 0.1em;
+}
+
+.vertical-lr {
+	writing-mode: vertical-lr;
+}
+
+.visible-tab {
+	background-color: var(--med);
+	padding: 0;
+	margin: .25em;
+	height: 50vh;
+}
+
+.tab-text {
+	padding-top: 1em;
+	width: 1em;
 }
